@@ -53,19 +53,23 @@ transactions, and broadcast transactions to the network.
 It is intended as the beginning of a hot/cold wallet system.  Using these
 scripts, you can:
 
-	1.  Generate a new public/private keypair and address for a new
+1.  Generate a new public/private keypair and address for a new
 	wallet.  This can be done offline (ideally on a secure, air-gapped 
 	computer). The private key and keyphrase need not leave the secure
 	machine.
 
-	2.  Transmit the public key to an online computer and use the script
+2.  Transmit the public key to an online computer and use the script
 	to generate a transaction for the new address.  Access to an online
 	wallet is needed to retreive information about the blockchain to craft
 	the unsigned transaction.
 
-	3.  Transmit the unsigned transaction back to the secure air-gapped
+3.  Transmit the unsigned transaction back to the secure air-gapped
 	computer to apply the signature.
 
-	4.  Transmit the signed tranaction back to a connected machine and
+4.  Transmit the signed tranaction back to a connected machine and
 	broadcast the transaction it to the Burstcoin network.
 
+# Changelog
+
+- Initial Commit
+- Genearlized RSAddress class with configurable prefix.
